@@ -1,0 +1,44 @@
+Name: Users
+Id: g=ee6eaf63829f8a259143a0c58ca65ea7
+Type: FolderType
+Children:
+- Name: Guest
+  Id: g=a47e12a521e90b6f7d52d1fe0cbddab4
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=f810a135a048ff9a2e544a5b709f5d1f
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Password
+    Id: g=58bb74182956ce1d62e3d14b6dabcde8
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=e9c1ad452d33653043a590b1eb1ad10c
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[237,157,254,211,248,56,131,168,222,201,12,177,230,10,28,253,42,41,43,163,132,211,134,91,178,44,5,47,117,234,127,215],"Salt":[130,0,171,123,190,111,239,228,160,55,117,59,107,148,21,74,37,247,30,183,157,97,153,128,33,89,43,158,135,207,135,112]}}
+    - Name: ChangeTimestamp
+      Id: g=2bd4a1cbbee885d727261d00d0fe137e
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2022-06-17T15:37:01.8001701"
+    - Name: History
+      Id: g=e532a50fbb66f064b8e82fc3eab8b98b
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
+- File: Users/Users.yaml
+- File: Groups/Groups.yaml
